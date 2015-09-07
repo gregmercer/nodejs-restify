@@ -1,0 +1,9 @@
+{
+  "name": "restify-example",
+  "description": "restify example",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "restify": "~2.8.3"
+  }
+}
