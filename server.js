@@ -14,9 +14,12 @@ server.get('/product', function(req, res, next) {
 });
 
 server.get('/product/:id', function(req, res, next) {
+  console.log('in /product/:id');
+  console.log('product id:' + req.params.id);
   var productFound = products.filter(function(product) {
     return product.id == req.params.id;
   });
+  console.log('productFound :' + JSON.stringify(productFound));
   res.send(productFound);
 });
 
