@@ -1,6 +1,14 @@
 var restify = require('restify');
 var port = 8080;
 
+if (process.env.PORT == undefined) {
+  console.log('port is undefined');
+}
+else {
+  port = process.env.PORT;
+}
+console.log('using port = ' + port);
+
 server = restify.createServer({
   name: 'Product API Server'
 });

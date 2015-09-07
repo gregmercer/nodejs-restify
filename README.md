@@ -32,7 +32,7 @@ docker images
 
 To Run in background (-d) using port 8080:
 ```
-docker run -d -p 8080:8080 gmercer/nodejs-restify
+docker run -d -p 8080:8080 -e PORT=8080 gmercer/nodejs-restify
 ```
 
 To Verify it is running:
