@@ -45,6 +45,11 @@ To Go into the running container:
 docker exec -it <container-id-goes-here> /bin/bash
 ```
 
+To Tail Logs on the running container:
+```
+docker logs -f <container-id-goes-here>
+```
+
 To Find ip address for docker-machine:
 ```
 docker-machine ip default
